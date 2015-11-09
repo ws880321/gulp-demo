@@ -1,0 +1,27 @@
+@import 'compass/reset';
+@import 'compass/css3';
+@import 'compass/utilities';
+@import "text/*.png";
+@include all-text-sprites;
+body{
+	backgrount:#ccc;
+}
+h2{font-size:22px}
+.last{color:#fff;}
+/*2222*/
+.a{color:red}
+@mixin btn{
+	display:inline-block;
+	padding: 0 10px;
+	border:none;
+	color:#fff;
+	backgrount:#f90;
+}
+.com-btn{
+	@include btn;
+	width:100px;
+	@include border-radius(5px);
+}
+.cf{
+	@include clearfix;
+}
